@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurore Regnier - Portefolio</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Chemin vers le CSS -->
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Chemin vers le CSS -->
 </head>
 <body>
 <header>
@@ -27,22 +26,34 @@
 <div class="container">
     <div class="bubble">
         <img src="images/design-icon.png" alt="Icône Design Graphique" class="icon">
-        <p><?php echo $pageData['intro']; ?></p>
+        <p>Le design graphique est mon domaine de prédilection, que ce sois en termes de passions ou d’expériences.</p>
     </div>
-    <h1><?php echo $pageData['title']; ?></h1>
-    <h2><?php echo $pageData['subtitle']; ?></h2>
+    <h1>Design graphique</h1>
+    <h2>montage</h2>
     <div class="grid">
-        <?php foreach ($pageData['images'] as $image): ?>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="image">
+        </div>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="image">
             <div class="grid-item">
-                <img src="images/<?php echo $image; ?>" alt="<?php echo $pageData['title']; ?>">
+                <img src="images/Fichier 1.png" alt="image">
             </div>
-        <?php endforeach; ?>
+            <div class="grid-item">
+                <img src="images/Fichier 1.png" alt="image">
+            </div>
+
+            <div class="grid-item">
+                <img src="images/Fichier 1.png" alt="image">
+            </div>
+            <div class="grid-item">
+                <img src="images/Fichier 1.png" alt="image">
+            </div>
     </div>
 </div>
 <!-- includes/footer.php -->
 <footer>
     <p>Aurore Regnier. Tous droits réservés.</p>
 </footer>
-</body>
+<script src="js/scripts.js"></script>
 </html>
-
