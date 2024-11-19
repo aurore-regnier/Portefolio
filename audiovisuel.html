@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurore Regnier - Portefolio</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Chemin vers le CSS -->
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Chemin vers le CSS -->
 </head>
 <body>
 <header>
@@ -28,16 +27,34 @@
 <div class="container">
     <div class="bubble">
         <img src="images/audiovisuel-icon.png" alt="Icône Audiovisuel" class="icon">
-        <p><?php echo $pageData['intro']; ?></p>
+        <p>Montage son et vidéo, animation traditionnelle comme assistée et motion design. </p>
     </div>
-    <h1><?php echo $pageData['title']; ?></h1>
-    <h2><?php echo $pageData['subtitle']; ?></h2>
+    <h1>Audiovisuel</h1>
+    <h2>montage</h2>
     <div class="grid">
-        <?php foreach ($pageData['images'] as $image): ?>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="image">
+        </div>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="image">
+        </div>
+    <h2>Motion Design</h2>
+        <div class="grid">
             <div class="grid-item">
-                <img src="images/<?php echo $image; ?>" alt="<?php echo $pageData['title']; ?>">
+                <img src="images/Fichier 1.png" alt="image">
             </div>
-        <?php endforeach; ?>
+            <div class="grid-item">
+                <img src="images/Fichier 1.png" alt="image">
+            </div>
+    </div>
+    <h2>Animation</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="images/Fichier 1.png" alt="image">
+            </div>
+            <div class="grid-item">
+                <img src="images/Fichier 1.png" alt="image">
+            </div>
     </div>
 </div>
 </body>
@@ -45,5 +62,5 @@
 <footer>
     <p>Aurore Regnier. Tous droits réservés.</p>
 </footer>
-</body>
+<script src="js/scripts.js"></script>
 </html>
