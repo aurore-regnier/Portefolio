@@ -197,6 +197,10 @@ h2 {
     
 }
 
+.intro img {
+    width:50%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
