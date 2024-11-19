@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurore Regnier - Portefolio</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Chemin vers le CSS -->
-    <script src="js/script.js"></script>
+    <title>Aurore Regnier - portefolio</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Chemin vers le CSS -->
+
 </head>
 <body>
 <header>
@@ -28,17 +28,29 @@
 <body>
 <div class="container">
     <div class="bubble">
-        <img src="images/arts-icon.png" alt="Icône Arts" class="icon">
-        <p><?php echo $pageData['intro']; ?></p>
+        <img src="image/arts-icon.png" alt="Icône Arts" class="icon">
+        <p>Ayant été en Art appliquée, J’ai eu l’occasion d’explorer differents types de création artistiques </p>
     </div>
-    <h1><?php echo $pageData['title']; ?></h1>
-    <h2><?php echo $pageData['subtitle']; ?></h2>
+    <h1>arts et créations</h1>
     <div class="grid">
-        <?php foreach ($pageData['images'] as $image): ?>
-            <div class="grid-item">
-                <img src="images/<?php echo $image; ?>" alt="<?php echo $pageData['title']; ?>">
-            </div>
-        <?php endforeach; ?>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="images">
+        </div>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="images">
+        </div>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="images">
+        </div>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="images">
+        </div>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="images">
+        </div>
+        <div class="grid-item">
+            <img src="images/Fichier 1.png" alt="images">
+        </div>
     </div>
 </div>
 </body>
@@ -46,6 +58,5 @@
 <footer>
     <p>Aurore Regnier. Tous droits réservés.</p>
 </footer>
-</body>
+<script src="js/scripts.js"></script>
 </html>
-
