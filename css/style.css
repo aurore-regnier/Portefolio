@@ -198,7 +198,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   margin-top: 0.5rem;
-  text-align: center;
+  /*! text-align: center; */
   color: #F8C200; /* Accent couleur or */
 }
 
@@ -206,16 +206,12 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
-  width: 100%;
-  max-width: 1200px;
 }
 
 .grid-item {
-  background-color: #CCCCCC;
   border-radius: 10px;
   overflow: hidden;
-  display: flex;
+  /*! display: flex; */
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -227,7 +223,5 @@ h2 {
 }
 
 .grid-item img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
+  width: 100%;
 }
