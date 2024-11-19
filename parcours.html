@@ -1,29 +1,66 @@
-<!-- view/parcours.php -->
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurore Regnier - Portefolio</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Chemin vers le CSS -->
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Chemin vers le CSS -->
+    <script src="js/scripts.js"></script>
 </head>
-
-<nav class="menuGrid">
+<body>
+<header>
+    
+    <nav class="menuGrid">
         <div class="menuIcon">
         <img src="images/menu-svgrepo-com.svg" alt="Menu" />
         </div>
 
-        <div class="element element1"><a href="design-graphique.html"><img src="images/design-icon.svg" alt="Design Graphique"></a></div>
-        <div class="element element2"><a href="audiovisuelle.html"><img src="images/audiovisuel-icon.svg" alt="Audiovisuel"></a></div>
-        <div class="element element3"><a href="web-design.html"><img src="images/web-icon.svg" alt="Web Design"></a></div>
-        <div class="element element4"><a href="arts.html"><img src="images/art-icon.svg" alt="Arts"></a></div>
-        <div class="element element5"><a href="parcours.html"><img src="images/parcours-icon.svg" alt="Parcours"></a></div>
+        <div class="element element1"><a href="design-graphique.php"><img src="images/design-icon.svg" alt="Design Graphique"></a></div>
+        <div class="element element2"><a href="audiovisuelle.php"><img src="images/audiovisuel-icon.svg" alt="Audiovisuel"></a></div>
+        <div class="element element3"><a href="web-design.php"><img src="images/web-icon.svg" alt="Web Design"></a></div>
+        <div class="element element4"><a href="arts.php"><img src="images/art-icon.svg" alt="Arts"></a></div>
+        <div class="element element5"><a href="parcours.php"><img src="images/parcours-icon.svg" alt="Parcours"></a></div>
 </nav>
-
-<div class="container">
-    <h2>Mon Parcours</h2>
-    <p>Ici, vous découvrirez mon parcours académique et professionnel, ainsi que les compétences que j'ai acquises.</p>
-</div>
-<!-- includes/footer.php -->
+    <h1>Aurore Regnier</h1>
+</header>
+<main>
+    <section class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h2>Septembre 2023 à 2024</h2>
+          <h3>BUT Métier du Multimédia et de l’Internet (MMI)</h3>
+          <h4>Projets Principaux</h4>
+          <div class="project-grid">
+            <div class="project-item"></div>
+            <div class="project-item"></div>
+            <div class="project-item"></div>
+          </div>
+          <h4>Stage</h4>
+          <div class="project-grid">
+            <div class="project-item"></div>
+            <div class="project-item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h2>2019 - 2023</h2>
+          <h3>Baccalauréat technologiques des Arts Appliqués</h3>
+          <h4>Travaux</h4>
+          <div class="project-grid">
+            <div class="project-item"></div>
+            <div class="project-item"></div>
+            <div class="project-item"></div>
+            <div class="project-item"></div>
+            <div class="project-item"></div>
+            <div class="project-item"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 <footer>
     <p>Aurore Regnier. Tous droits réservés.</p>
 </footer>
