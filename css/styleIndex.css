@@ -1,0 +1,189 @@
+body {
+    background-color: #180339; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    margin: 0; /* Retire les marges par défaut */
+    font-family: Arial, sans-serif; /* Police du texte */
+}
+
+/* Header */
+header {
+    display: flex; /* Utilise flexbox pour la mise en page */
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    align-items: flex-start; /* Aligne les éléments au début */
+    padding: 25px; /* Ajuste le padding pour augmenter la hauteur du header */
+    background-color: #180339; /* Couleur de fond du header */
+    height: 100px; /* Hauteur fixe pour le header */
+}
+
+header h1 {
+    flex-grow: 1; /* Permet au h1 de prendre l'espace restant */
+    margin: 0; /* Supprime la marge par défaut du h1 */
+    text-align: center; /* Aligne le texte à gauche */
+    color: white; /* Couleur du texte */
+}
+
+/* Icône du menu */
+.menuIcon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Animation pour agrandir l'icône au survol */
+    position: fixed; /* Position fixe pour le menu icon */
+    margin: 10px; /* Marge autour de l'icône */
+    z-index: 20; /* Au-dessus des autres éléments */
+}
+
+nav img {
+    width: 40px; /* Largeur de l'image */
+    height: 40px; /* Hauteur de l'image */
+
+}
+
+.menuIcon:hover {
+    transform: scale(1.1); /* Agrandir l'icône légèrement au survol */
+}
+
+/* Menu en forme d'escalier inversé */
+.menuGrid {
+    display: grid; /* Utilise une grille pour les éléments du menu */
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+    grid-template-rows: repeat(3, 1fr); /* Trois lignes */
+    width: 200px; /* Largeur du menu */
+    height: 200px; /* Hauteur du menu */
+    position: fixed; /* Pour positionner les éléments du menu correctement */
+    margin: 0 auto; /* Centre le menu horizontalement */
+    overflow: hidden; /* Cache tout débordement */
+}
+
+/* Les éléments */
+.element {
+    width: 60px; /* Largeur des éléments */
+    height: 60px; /* Hauteur des éléments */
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    opacity: 0; /* Caché par défaut */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Transition fluide */
+}
+
+/* Positionnement des éléments */
+.menuGrid.active .element1 {
+    grid-column: 2; /* Colonne 2 */
+    grid-row: 1; /* Ligne 1 */
+    opacity: 1; /* Rendre visible */
+}
+
+.menuGrid.active .element2 {
+    grid-column: 3; /* Colonne 3 */
+    grid-row: 1; /* Ligne 1 */
+    opacity: 1; /* Rendre visible */
+}
+
+.menuGrid.active .element3 {
+    grid-column: 1; /* Colonne 1 */
+    grid-row: 2; /* Ligne 2 */
+    opacity: 1; /* Rendre visible */
+}
+
+.menuGrid.active .element4 {
+    grid-column: 2; /* Colonne 2 */
+    grid-row: 2; /* Ligne 2 */
+    opacity: 1; /* Rendre visible */
+}
+
+.menuGrid.active .element5 {
+    grid-column: 1; /* Colonne 1 */
+    grid-row: 3; /* Ligne 3 */
+    opacity: 1; /* Rendre visible */
+}
+
+/* Ajoutez une animation avec un délai pour des effets échelonnés */
+.menuGrid .element1 {
+    transition-delay: 0.1s; /* Délai pour l'élément 1 */
+}
+.menuGrid .element2 {
+    transition-delay: 0.2s; /* Délai pour l'élément 2 */
+}
+.menuGrid .element3 {
+    transition-delay: 0.3s; /* Délai pour l'élément 3 */
+}
+.menuGrid .element4 {
+    transition-delay: 0.4s; /* Délai pour l'élément 4 */
+}
+.menuGrid .element5 {
+    transition-delay: 0.5s; /* Délai pour l'élément 5 */
+}
+
+.container {
+    margin-top: 220px; /* Ajuste cette valeur selon la taille du menu */
+}
+/*index.php*/
+
+.container {
+    margin-top: 220px; /* Espace pour ne pas chevaucher le menu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permet aux bulles de passer à la ligne si nécessaire */
+    height: calc(100vh - 220px); /* Prend tout l'espace restant sous le menu */
+}
+
+/* Les bulles (icônes circulaires) */
+.bulle {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Animation au hover */
+.bulle:hover {
+    transform: scale(1.1); /* Agrandit la bulle au survol */
+}
+
+/* Positionnement personnalisé des bulles */
+.bulle1 {
+    position: relative;
+    top: -60%;
+    left: 15%;
+  }
+.bulle1 img{
+    width: 326px;
+}
+
+.bulle2 {
+    position: relative;
+    top: -65%;
+    left: -40%;
+  }
+.bulle2 img{
+    width: 256px;
+}
+
+.bulle3 {
+    position: absolute;
+    top: 75%;
+    left: 72%;
+  }
+.bulle3 img{
+    width: 215px ;
+}
+
+.bulle4 {
+    position: absolute;
+    top: 71%;
+    right: 58%;
+  }
+.bulle4 img{
+    width: 198px ;
+}
+
+.bulle5 {
+    position: absolute;
+    top: 28%;
+    right: 3%;
+}
+
+.bulle5 img{
+    width: 214px ;
+}
