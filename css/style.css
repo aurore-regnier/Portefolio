@@ -192,12 +192,14 @@ h2 {
   color: #F8C200; /* Accent couleur or */
 }
 
+p{
+    text-align:left;
+}
+
 .intro {
     display:grid;
     grid-template-columns:1fr 1fr;
     grid-template-row:1fr 1fr;
-
-    
 }
 
 .intro img {
