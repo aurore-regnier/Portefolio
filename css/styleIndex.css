@@ -1,7 +1,7 @@
 body {
     background-color: #180339;
     color: white;
-    margin: 0;
+    margin: 2%;
     font-family: "adobe-caslon-pro", serif;
     font-weight: 400;
     font-style: normal;
@@ -139,8 +139,8 @@ nav img {
 /* Déplacement des bulles vers la gauche */
 .bulle1 {
     position: relative;
-    top: -60%;
-    left: 15%;
+    top: -52%;
+    left: 21%;  /* Décalage vers la gauche */
 }
 
 .bulle1 img {
@@ -149,7 +149,8 @@ nav img {
 
 .bulle2 {
     position: relative;
-    top: -65%;
+    top: -61%;
+    left: -22%;  /* Décalage vers la gauche */
 }
 
 .bulle2 img {
@@ -157,7 +158,9 @@ nav img {
 }
 
 .bulle3 {
-    position: absolute;
+    position: relative;
+    top: -71%;
+    left: 35%;  /* Décalage vers la gauche */
 }
 
 .bulle3 img {
@@ -165,8 +168,9 @@ nav img {
 }
 
 .bulle4 {
-    position: absolute;
-    top: 71%;
+    position: relative;
+    top: -3%;
+    right: 32%;  /* Décalage vers la gauche */
 }
 
 .bulle4 img {
@@ -174,10 +178,71 @@ nav img {
 }
 
 .bulle5 {
-    position: absolute;
-    top: 28%;
+    position: relative;
+    top: -18%;
+    right:-7%;  /* Décalage vers la gauche */
 }
 
 .bulle5 img {
     width: 214px;
+}
+
+/* Animation de rotation continue */
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg) scale(1.4);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.4);
+    }
+}
+
+/* Texte animé avec rotation différente au départ */
+.design-text {
+    position: absolute;
+    z-index: 1;
+    animation: rotateText 20s linear infinite; /* Rotation lente */
+    transform-origin: center;
+    transform: rotate(0deg); /* Début à 0° */
+}
+
+.audiovisuel-text {
+    position: absolute;
+    z-index: 1;
+    animation: rotateText 20s linear infinite; /* Rotation lente */
+    transform-origin: center;
+    transform: rotate(45deg); /* Début à 45° */
+}
+
+.web-text {
+    position: absolute;
+    z-index: 1;
+    animation: rotateText 20s linear infinite; /* Rotation lente */
+    transform-origin: center;
+    transform: rotate(90deg); /* Début à 90° */
+}
+
+.art-text {
+    position: absolute;
+    z-index: 1;
+    animation: rotateText 20s linear infinite; /* Rotation lente */
+    transform-origin: center;
+    transform: rotate(135deg); /* Début à 135° */
+}
+
+.parcours-text {
+    position: absolute;
+    z-index: 1;
+    animation: rotateText 20s linear infinite; /* Rotation lente */
+    transform-origin: center;
+    transform: rotate(180deg); /* Début à 180° */
+}
+
+/* Arrêt de la rotation au survol */
+.bulle1:hover .design-text,
+.bulle2:hover .audiovisuel-text,
+.bulle3:hover .parcours-text,
+.bulle4:hover .art-text,
+.bulle5:hover .web-text{
+    animation-play-state: paused; /* Arrête la rotation */
 }
