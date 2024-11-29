@@ -136,6 +136,7 @@ nav img {
     transform: scale(1.1);
 }
 
+/* Déplacement des bulles vers la gauche */
 .bulle1 {
     position: relative;
     top: -60%;
@@ -149,7 +150,6 @@ nav img {
 .bulle2 {
     position: relative;
     top: -65%;
-    left: -40%;
 }
 
 .bulle2 img {
@@ -158,8 +158,6 @@ nav img {
 
 .bulle3 {
     position: absolute;
-    top: 75%;
-    left: 72%;
 }
 
 .bulle3 img {
@@ -169,7 +167,6 @@ nav img {
 .bulle4 {
     position: absolute;
     top: 71%;
-    right: 58%;
 }
 
 .bulle4 img {
@@ -179,7 +176,6 @@ nav img {
 .bulle5 {
     position: absolute;
     top: 28%;
-    right: 3%;
 }
 
 .bulle5 img {

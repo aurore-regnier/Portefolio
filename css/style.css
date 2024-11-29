@@ -217,18 +217,28 @@ h2 {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    border: 1px solid red;
+    display: flex; /* Active Flexbox */
+    flex-wrap: wrap; /* Permet aux items de passer à une nouvelle ligne */
+    gap: 1.5rem; /* Espace entre les items */
+    justify-content: flex-start; /* Aligne les items à gauche */
+    border: 1px solid red; /* Repère pour les marges */
 }
 
 .grid-item {
-    display: flex;
+    flex: 1 1 calc(33.33% - 1.5rem); /* Largeur maximale : 33.33% moins le gap */
+    max-width: calc(33.33% - 1.5rem); /* Largeur fixe si l'espace est suffisant */
+    aspect-ratio: 1 / 1; /* Maintient un ratio carré */
+    display: flex; /* Centre l'image à l'intérieur */
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 50%;  
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden; /* Coupe les débordements */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+}
+
+.grid-item img {
+    display: block;
+    width: 100%; /* Remplit complètement l'élément parent */
+    height: 100%; /* Remplit complètement l'élément parent */
+    object-fit: cover; /* Conserve les proportions et remplit */
 }
