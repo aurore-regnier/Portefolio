@@ -145,6 +145,7 @@ nav img {
 
 .bulle1 img {
     width: 326px;
+    pointer-events: none;
 }
 
 .bulle2 {
@@ -155,6 +156,7 @@ nav img {
 
 .bulle2 img {
     width: 256px;
+    pointer-events: none;
 }
 
 .bulle3 {
@@ -165,6 +167,7 @@ nav img {
 
 .bulle3 img {
     width: 215px;
+    pointer-events: none;
 }
 
 .bulle4 {
@@ -175,16 +178,19 @@ nav img {
 
 .bulle4 img {
     width: 198px;
+    pointer-events: none;
 }
 
 .bulle5 {
     position: relative;
     top: -18%;
     right:-7%;  /* Décalage vers la gauche */
+    
 }
 
 .bulle5 img {
     width: 214px;
+    pointer-events: none;
 }
 
 /* Animation de rotation continue */
