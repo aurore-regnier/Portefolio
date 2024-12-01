@@ -221,7 +221,6 @@ h2 {
     flex-wrap: wrap; /* Permet aux items de passer à une nouvelle ligne */
     gap: 1.5rem; /* Espace entre les items */
     justify-content: flex-start; /* Aligne les items à gauche */
-    border: 1px solid red; /* Repère pour les marges */
 }
 
 .grid-item {
